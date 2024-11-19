@@ -13,29 +13,36 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-    width: 500px;
-    margin-top: 40px;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 40px 0;
     font-size: 25px;
     text-align: center;
     background-color: rgb(143, 127, 218);
-    border-radius: 5px;
-    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .converter{
     display: flex;
     flex-direction: column;
-    height: 5px;
+    /* height: 5px;
     width: 200px;
     padding-left: 110px;
-    padding-top: 30px;
-    gap: 10px;
+    padding-top: 30px; */
+    align-items: center;
+    padding: 30px;
+    gap: 1px;
     font-size: 20px;
 }
 
-#inputType{
-    padding-left: 10px;
-    font-size: 25px;
+#inputType, #outputType{
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 input{
@@ -43,25 +50,38 @@ input{
     border-radius: 6px;
     border: 2px solid #ddd;
     font-size: 20px;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 label{
+    
     font-size: 20px;
     margin-left: 14px;
 }
 
 select{
-    padding: 4px;
+    padding: 5px;
+    font-size: 20px;
     border-radius: 7px;
-    background-color: #ffffff;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 70%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 button{
-    margin-top: 30px;
-    margin-left: 70px;
+    margin-top: 20px;
+    border: none;
     border-radius: 6px;
-    padding: 7px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(239, 148, 92);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover{
@@ -70,8 +90,11 @@ button:hover{
 }
 
 #result{
-    margin-top: 50px;
-    width: 300px;
+    margin-top: 30px;
+    padding: 10px;
     font-size: 20px;
     color: #f80606;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
