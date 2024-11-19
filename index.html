@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="converter">
+            <div id="inputType">
+                <input type="number" id="inputValue" placeholder="Enter the temperature">
+                <label for="inputValue">From: </label>
+                <select id="inputUnit">
+                    <option value="Celsius">Celsius (°C)</option>
+                    <option value="Fahrenheit">Fahrenheit (°F)</option>
+                    <option value="Kelvin">Kelvin (K)</option>
+                    <option value="Rankine">Rankine (°R)</option>
+                    <option value="Reaumur">Reaumur (°Re)</option>
+                    <option value="Newton">Newton (°N)</option>
+                    <option value="Delisle">Delisle (°De)</option>
+                    <option value="Romer">Romer (°Ro)</option>
+                </select>
+            </div>
+
+            <div id="outputType">
+                <label>To: </label>
+                <select id="outputUnit">
+                    <option value="Celsius">Celsius (°C)</option>
+                    <option value="Fahrenheit">Fahrenheit (°F)</option>
+                    <option value="Kelvin">Kelvin (K)</option>
+                    <option value="Rankine">Rankine (°R)</option>
+                    <option value="Reaumur">Reaumur (°Re)</option>
+                    <option value="Newton">Newton (°N)</option>
+                    <option value="Delisle">Delisle (°De)</option>
+                    <option value="Romer">Romer (°Ro)</option>
+                </select>
+            </div>
+
+            <p id="result"></p>
+            <button onclick="convertTemperature()">Convert</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
