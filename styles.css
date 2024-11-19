@@ -67,7 +67,7 @@ select{
     border-radius: 7px;
     border: 1px solid #ddd;
     background-color: #fff;
-    width: 70%;
+    width: 100%;
     max-width: 300px;
     box-sizing: border-box;
 }
